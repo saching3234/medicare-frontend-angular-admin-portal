@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class OrderServicesService {
 
   private token;
-  private url="http://localhost:4201/api/admin/userOrders/";
+  private url="http://52.0.196.126:4201/api/admin/userOrders/";
   private header2;
   constructor(private http:HttpClient) {
     //getting the locall saved token
