@@ -33,7 +33,7 @@ export class AddNewProductComponent implements OnInit {
 
   //method for getting the selected image
   onSelectedFile(event){
-    const file=event.target.files[0];
+    const file=event.target.files[0].name;
     this.userFile=file;
     console.log(this.userFile);
   }
