@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class CategoryServicesService {
   private token;
-  private url="http://18.209.43.115:4201/api/admin/category/";
+  private url="http://54.83.60.252:4201/api/admin/category/";
   private header2;
   constructor(private http:HttpClient) {
     //getting the locall saved token
