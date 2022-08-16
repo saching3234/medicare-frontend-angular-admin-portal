@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserServicesService {
-  private url="http://18.209.43.115:4201/api/admin";
-  private url2="http://18.209.43.115:4201/api/users/change"
+  private url="http://54.83.60.252:4201/api/admin";
+  private url2="http://54.83.60.252:4201/api/users/change"
 
   constructor(private httpClient:HttpClient) { }
 
