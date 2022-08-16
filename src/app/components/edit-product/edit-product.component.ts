@@ -53,7 +53,7 @@ export class EditProductComponent implements OnInit {
   }
  
   //method for getting the selected image
-  onSelectedFile(event){
+  onSelectedFile(event:any){
     const file=event.target.files[0];
     this.userFile=file;
     console.log(this.userFile);
