@@ -82,7 +82,9 @@ export class EditProductComponent implements OnInit {
     
      //if image is updated 
     if(this.userFile){
-    //creating the form data for multipart request  
+    //creating the form data for multipart request 
+      //setting the image name
+       this.product.img_name=this.userFile.name
     const formData=new FormData();
     formData.append("product",JSON.stringify(this.product));
     formData.append("file",this.userFile);
