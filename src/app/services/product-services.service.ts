@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductServicesService {
-  private url="http://54.83.60.252:4201/api/admin/products/";
+  private url="http://52.1.252.30:4201/api/admin/products/";
   private token;
 
   constructor(private http:HttpClient) { 
