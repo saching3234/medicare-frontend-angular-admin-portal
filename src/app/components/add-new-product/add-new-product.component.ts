@@ -41,11 +41,13 @@ export class AddNewProductComponent implements OnInit {
   //method for saving the product details in the backend
   submit(addNewProd){
     this.productData=addNewProd.value
+       //setting the image name
+    this.productData.img_name=this.userFile.name
     const formData=new FormData();
     formData.append("product",JSON.stringify(this.productData));
     formData.append("file",this.userFile);
   
-    console.log(formData);  
+    console.log("form data before submitting : ",formData);  
     
     //calling the service method
     this.prodServ.saveProduct(formData).subscribe(res=>{
